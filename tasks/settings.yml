@@ -19,7 +19,7 @@
     state: present
   with_items: "{{ jenkins_init_changes }}"
   register: jenkins_init_prefix
-  when: dummy_var is definded
+  when: dummy_var is defined
 
 - name: Set the Jenkins home directory.
   lineinfile:
